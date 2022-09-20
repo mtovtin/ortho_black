@@ -1,0 +1,537 @@
+<html>
+
+<head>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+      $("#Content").load("xz.html");
+    });
+
+  </script>
+</head>
+
+<link href="ortho/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+<body>
+<div id="navbar">
+
+  <span><a href=""><img id="logo" src="./assets/images/logo.svg" alt=""></a></span>
+  <div id="logo1"><img src="./assets/images/logo.svg" alt=""></div>
+  <span id="adv"> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="about">ПРО МЕНЕ</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+  <span> <a href="gallery">ВІДГУКИ</a></span>
+
+  <div (click)="toggleNavbar()" id="nav_butt"><img src="./assets/images/Menu Icon.png" alt=""></div>
+</div>
+
+
+<div id="mob_menu" class="d" [ngClass]="{ 'show': navbarOpen }">
+  <span > <a href="">ГОЛОВНА</a></span>
+  <span> <a href="about">ПРО МЕНЕ</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+  <span> <a href="gallery">ВІДГУКИ</a></span>
+
+</div>
+
+<div [ngClass]="{ 'show2': navbarOpen }">
+
+
+
+  <div id="inst">
+
+    <!-- <div style="margin: 0 50px;" data-mc-src="4737b088-8caa-4e27-9e81-467a15789ba4#instagram"></div>
+        
+<script 
+  src="https://cdn2.woxo.tech/a.js#62c01a09fbe6f799a42fc740" 
+  async data-usrc>
+</script> -->
+    <div style="color: white;" id="inns" class="embedsocial-hashtag" data-ref="04bb35dee03837c1523146863760e260f3469121"><a
+        class="feed-powered-by-es feed-powered-by-es-slider-new" href="https://embedsocial.com/social-media-aggregator/"
+        target="_blank" title="Widget by EmbedSocial"><span></span></a></div>
+    <script>
+      (function (d, s, id) {
+        var js;
+        if (d.getElementById(id)) {
+          return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://embedsocial.com/cdn/ht.js";
+        d.getElementsByTagName("head")[0].appendChild(js);
+      }(document, "script", "EmbedSocialHashtagScript"));
+
+    </script>
+    <br>
+    <!-- <div style="text-align:center; margin-top: -30px; margin-bottom: 50px;"> <button id="reg_button"><a
+          href="https://www.instagram.com/dr.oleksandr_kostenko">INSTAGRAM <img width="20px" style="margin-top: 3px"
+            src="./assets/images/Instagram.png" alt=""></a></button></div> -->
+  </div>
+
+
+
+  <div id="reg_online_div" >
+
+    <span id="reg_online" style="color: white;">Обирайте зручний час та самостійно записуйтесь на консультацію! 🚀</span>
+    <br><button id="reg_button"><a style="background-color: #77ABA5" href="https://calendly.com/dr_kostenko">ЗАПИСАТИСЬ</a></button>
+  </div>
+  <!-- <div id="reg_online_div" class="commm">
+
+    <span id="reg_online">Дуже дякуємо лікарю Олександру Костенку за його професійний підхід до роботи. Завдяки його професіоналізму у моєї доньки тепер рівні зуби. І термін, і результат перевершив всі наші очікування</span>
+    <br><span id="reg_online_2" style="display: inline-block; margin: 20px 50px 0 50px; opacity: 0.5">— Любов Олійник</span>
+  </div> -->
+
+
+
+  <div id="comp" style="text-align: center;" >
+
+    <span style="display: inline-block;" class="res s" style="color: white;" id="ma">Результати</span>
+    <div class="comparison" style="display: flex; flex-direction:row; justify-content: center; align-items: center; margin: 20px 0px;  ">
+      <div style="text-align: center">
+        <img-comparison-slider  class=" gr" >
+        <img  slot="first" src="./assets/images/IMG_1123.webp" />
+          <img  slot="second" src="./assets/images/IMG_1124.webp" />
+        </img-comparison-slider>
+      </div>
+      <div style="text-align: center;">
+        <img-comparison-slider class="dr" >
+        <img  slot="first" src="./assets/images/IMG_1126.webp" />
+        <img slot="second" src="./assets/images/IMG_1125.webp" />
+  
+        </img-comparison-slider>
+      </div>
+    </div>
+
+
+    <div class="comparison" style="display: flex; flex-direction:row; justify-content: center; align-items: center; margin: 20px 0px;">
+      <div style="text-align: center">
+        <img-comparison-slider  class="gr">
+          <img  slot="first" src="./assets/images/IMG_1128.webp" />
+          <img  slot="second" src="./assets/images/IMG_1127.webp" />
+        </img-comparison-slider>
+      </div>
+      <div style="text-align: center;">
+        <img-comparison-slider class="dr">
+          <img  slot="first" src="./assets/images/IMG_1122.webp" />
+          <img  slot="second" src="./assets/images/IMG_1121.webp" />
+        </img-comparison-slider>
+      </div>
+    </div>
+    <div id="Content"></div>
+  </div>
+
+
+
+
+
+
+
+
+  
+
+  <div style="text-align: center; margin-top: -30px;" class="i">
+    <span id="rep" class="res"style="color: white;">Відгуки</span>
+<div class="carousel">
+    <carousel style="background-color: none; margin-top: 25px;" [cellsToShow]=1 [cellsToScroll]=1  [height]=250  [cellWidth]=120 [autoplay]=false [loop]="false"
+      [arrows]="true" [transitionTimingFunction]="'ease-in-out'" [autoplayInterval]=10000 [dots]=false
+      [transitionDuration]=600 [arrowsTheme]="'dark'">
+      <div   class="carousel-cell">
+        <img src="./assets/images/screen16.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen15.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen14.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen17.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen18.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen19.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen20.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen21.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen22.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen23.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen24.png">
+      </div>
+
+      <div   class="carousel-cell">
+        <img src="./assets/images/screen16.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen15.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen14.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen17.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen18.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen19.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen20.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen21.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen22.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen23.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen24.png">
+      </div>
+      <div   class="carousel-cell">
+        <img src="./assets/images/screen16.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen15.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen14.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen17.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen18.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen19.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen20.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen21.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen22.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen23.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen24.png">
+      </div>
+      <div   class="carousel-cell">
+        <img src="./assets/images/screen16.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen15.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen14.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen17.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen18.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen19.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+
+      <div   class="carousel-cell">
+        <img src="./assets/images/screen16.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen15.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen14.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen17.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen18.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen19.png">
+      </div>
+
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen20.png">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/screen21.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen22.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen23.png">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/screen24.png">
+      </div>
+
+    </carousel>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- <div class="carousel" id="c1">
+
+    <carousel [cellsToShow]=3 [margin]=25 [height]=250  [cellWidth]=120 [autoplay]="false" [loop]="true"
+      [arrowsTheme]="'dark'" [transitionTimingFunction]="'ease-in-out'" [autoplayInterval]=4000 [dots]=false
+      [transitionDuration]=600>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+
+
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+
+
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+
+
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+
+    </carousel>
+  </div>
+
+
+  <div class="carousel" id="c2">
+
+    <carousel [cellsToShow]=1 [margin]=25 [height]=250  [cellWidth]=120 [autoplay]="true" [loop]="true"
+      [arrowsTheme]="'dark'" [transitionTimingFunction]="'ease-in-out'" [autoplayInterval]=4000 [dots]=false
+      [transitionDuration]=600>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+
+
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+
+
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+
+
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell" class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/1.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/2.jpg">
+      </div>
+      <div class="carousel-cell">
+        <img src="./assets/images/3.jpg">
+      </div>
+
+    </carousel>
+  </div> -->
+
+
+
+
+
+
+  <!-- <div
+  loading="lazy"
+  data-mc-src="06a41f44-a7eb-4db7-a684-a06e5aa2c451#null"></div>
+        
+<script 
+  src="https://cdn2.woxo.tech/a.js#62c01a09fbe6f799a42fc740" 
+  async data-usrc>
+</script> -->
+
+  <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css" />
+ 
+  <!-- <div class="embedsocial-hashtag" data-ref="04bb35dee03837c1523146863760e260f3469121"><a class="feed-powered-by-es feed-powered-by-es-feed-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial">Widget by EmbedSocial<span>→</span></a></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script> -->
+  <!-- <div data-mc-src="bff3dc11-feed-4790-a810-90a4bd3aa890#instagram"></div> -->
+  <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-ab9259c4-0a2d-4d08-9e27-c32abcb2167e"></div> -->
+  <!-- <div class="embedsocial-hashtag" data-ref="04bb35dee03837c1523146863760e260f3469121"><a class="feed-powered-by-es feed-powered-by-es-slider-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial">Widget by EmbedSocial<span>→</span></a></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialHashtagScript"));</script> -->
+  <div id="reg_online_divv" style="color: white; margin-bottom: 20px;" class="l" class="c" style="margin-top: 70px;" >
+  <span class="res" style="color: white;">Як нас знайти</span>
+  </div>
+  <div id="iframe">
+
+    <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Mynaiska%20St,%2035%D0%90,%20Uzhhorod,%20Zakarpattia%20Oblast,%20Ukraine,%2088000&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px; background-color: transparent;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+</div>
+
+<footer id="footer" >
+<span id="foot1">вулиця Минайська, 35А, Ужгород, Закарпатська область, 88000</span>
+<div id="foot2"><img width="40px" src="./assets/images/Instagram.png" alt="">
+<img width="40px" src="./assets/images/Facebook_white.png" alt="">
+<img width="40px" src="./assets/images/tel.png" alt="">
+</div>
+<span id="foot3">(066) xxx-xx-xx<br>
+  (066) xxx-xx-xx</span>
+</footer>
+</div>
+</body>
+
+</html>
+
+

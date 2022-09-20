@@ -1,0 +1,157 @@
+<html>
+
+<head>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+      $("#Content").load("xz.html");
+    });
+
+  </script>
+</head>
+
+<link href="ortho/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+<body>
+<div id="navbar">
+
+  <span><a href=""><img id="logo" src="./assets/images/logo.svg" alt=""></a></span>
+  <div id="logo1"><img src="./assets/images/logo.svg" alt=""></div>
+  <span id="adv"> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="about">ПРО МЕНЕ</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+  <span> <a href="gallery">ВІДГУКИ</a></span>
+ 
+
+
+  <div (click)="toggleNavbar()" id="nav_butt"><img src="./assets/images/Menu Icon.png" alt=""></div>
+</div>
+
+
+<div id="mob_menu" class="d" [ngClass]="{ 'show': navbarOpen }">
+  <span> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="about">ПРО МЕНЕ</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+  <span> <a href="gallery">ВІДГУКИ</a></span>
+
+</div>
+
+<div [ngClass]="{ 'show2': navbarOpen }">
+  <div id="bod" style="display: flex; flex-direction:column;">
+    <span style="text-align: center; display: inline-block; margin-bottom: 50px; font-size: 26px; color: white">НАШІ
+      ПЕРЕВАГИ</span>
+    <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+      <div class="advantage" style="display: flex; flex-direction: row; align-items: center; gap: 50px; ">
+        <div> <img src="./assets/images/IMG_1069.PNG" alt=""></div>
+        <div class="txt">
+          <div class="highlight">НЕПРЯМА ФІКСАЦІЯ.</div> Фіксація системи на виготовлені за відбитками гіпсові моделі
+          пацієнта. Це набагато точніше та зручніше для пацієнта, бо повна фіксація одразу обох щелеп може тривати лише
+          близько двох годин.
+        </div>
+
+      </div>
+      <div style="text-align: center; margin-top: 40px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+          alt=""></div>
+    </div>
+    <div style="display: flex; flex-direction: column; margin-bottom: 30px; background-color: none;">
+        <div class="advantage" style="display: flex; flex-direction: row; align-items: center; gap: 50px; background-color: none; ">
+          <div style="background-color: none;"> <img style="width: 300px; " src="./assets/images/Group 3.png" alt=""></div>
+          <div class="txt">
+            <div class="highlight">СПЕЦІАЛЬНІ ШИРОКІ ДУГИ</div> Pitts Broad, що дозволяють створити широку посмішку за допомогою розширення зубних рядів.
+          </div>
+  
+        </div>
+        <div style="text-align: center; margin-top: 40px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: row; align-items: center; gap: 50px; ">
+          <div> <img src="./assets/images/IMG_1061.JPG" alt=""></div>
+          <div class="txt">
+            <div class="highlight">НАКЛАДКИ</div> для роз’єднання прикусу та міорелаксації для швидшої роботи системи через виключення заклинювання «зубів об зуби».
+          </div>
+  
+        </div>
+        <div style="text-align: center; margin-top: 40px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: row; align-items: center; gap: 50px; ">
+          <div> <img style="width: 300px;" src="./assets/images/screen4.png" alt=""></div>
+          <div class="txt">
+            <div class="highlight">ІНДИВІДУАЛЬНЕ РОЗТАШУВАННЯ БРЕКЕТІВ.</div> Модифіковане позиціонування брекетів на зубі, яке ґрунтується не на табличних значеннях, а на індивідуальних параметрах кожного пацієнта, що дозволяє створити так звану «дугу посмішки» (smile arch), що є естетичним еталоном сучасної, привабливої та молодої посмішки.
+          </div>
+  
+        </div>
+        <div style="text-align: center; margin-top: 40px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: row; align-items: center; gap: 50px; ">
+          <div> <img src="./assets/images/IMG_1064.JPG" alt=""></div>
+          <div class="txt">
+            <div class="highlight">МІКРО-ІМПЛАНТИ</div> – абсолютна опора для тяг, яка дозволяє вирішити навіть найскладніші випадки без видалень.
+          </div>
+  
+        </div>
+        <div style="text-align: center; margin-top: 40px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: row; align-items: center; gap: 50px; ">
+          <div> <img src="./assets/images/screen6.png" alt=""></div>
+          <div class="txt">
+            <div class="highlight">СЕПАРАЦІЇ АБО IPR</div> СЕПАРАЦІЇ АБО IPR (інтерпроксимальна редукція) – безболісна нешкідлива процедура створення невеликих проміжків між зубами зарахунок зменшення обсягу емалі для створення місця без видалень.
+          </div>
+  
+        </div>
+        <div style="text-align: center; margin-top: 40px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: row; align-items: center; gap: 50px; ">
+          <div> <img src="./assets/images/IMG_1060.JPG" alt=""></div>
+          <div class="txt">
+            <div class="highlight">ЕЛАСТИКИ</div> ЕЛАСТИКИ для зміни прикусу і створення щільних міжзубних контактів.
+          </div>
+  
+        </div>
+        <div style="text-align: center; margin-top: 40px;"><img width="100%" height="2px" src="./assets/images/Rectangle 21.png"
+            alt=""></div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; margin-bottom: 30px;">
+        <div class="advantage" style="display: flex; flex-direction: row; align-items: center; gap: 50px; ">
+          <div> <img src="./assets/images/Group 2.png" alt=""></div>
+          <div class="txt">
+            <div class="highlight">Одразу ДВА види РЕТЕНЦІЇ. </div>Закріплення результату одночасно як незнімним ретейнером, так і спеціальними капами.
+
+          </div>
+  
+        </div>
+
+      </div>
+ 
+  </div>
+
+  <footer id="footer">
+    <span id="foot1">вулиця Минайська, 35А, Ужгород, Закарпатська область, 88000</span>
+    <div id="foot2"><img width="40px" src="./assets/images/Instagram.png" alt="">
+      <img width="40px" src="./assets/images/Facebook_white.png" alt="">
+      <img width="40px" src="./assets/images/tel.png" alt="">
+    </div>
+    <span id="foot3">(066) xxx-xx-xx<br>
+      (066) xxx-xx-xx</span>
+  </footer>
+  
+ </div>
+ </body>
+ </html>

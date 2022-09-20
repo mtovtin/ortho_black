@@ -1,0 +1,615 @@
+<html>
+
+<head>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+      $("#Content").load("xz.html");
+    });
+
+  </script>
+</head>
+
+<link href="ortho/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+<body>
+<div id="navbar">
+
+  <span><a href=""><img id="logo" src="./assets/images/logo.svg" alt=""></a></span>
+  <div id="logo1"><img src="./assets/images/logo.svg" alt=""></div>
+  <span id="adv"> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="about">ПРО МЕНЕ</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+  <span> <a href="gallery">ВІДГУКИ</a></span>
+
+
+  <div (click)="toggleNavbar()" id="nav_butt"><img src="./assets/images/Menu Icon.png" alt=""></div>
+</div>
+
+
+<div id="mob_menu" class="d" [ngClass]="{ 'show': navbarOpen }">
+  <span> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="about">ПРО МЕНЕ</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+  <span> <a href="gallery">ВІДГУКИ</a></span>
+
+</div>
+
+<div [ngClass]="{ 'show2': navbarOpen }">
+  <div id="bod" style="display: flex; flex-direction:column;">
+    <span id="x" style="text-align: center;margin-top: 60px; display: inline-block;   font-size: 26px; color: white">ВІДГУКИ</span>
+    <div class="carousel" id="c1">
+
+      <carousel [cellsToShow]=1 [margin]=25 [height]=650  [cellWidth]=120  [loop]="true"
+        [arrowsTheme]="'dark'" [transitionTimingFunction]="'ease-in-out'" [autoplayInterval]=4000 [dots]=false
+        [transitionDuration]=600>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen16.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen15.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen14.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen17.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen18.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen19.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/screen16.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen15.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen14.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen17.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen18.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen19.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+  
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/screen16.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen15.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen14.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen17.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen18.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen19.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+  
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/screen16.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen15.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen14.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen17.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen18.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen19.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+  
+  
+      </carousel>
+    </div>
+  
+  
+    <div class="carousel" id="c2">
+  
+      <carousel [cellsToShow]=1 [margin]=25 [height]=450  [cellWidth]=120  [loop]="true"
+        [arrowsTheme]="'dark'" [transitionTimingFunction]="'ease-in-out'" [autoplayInterval]=4000 [dots]=false
+        [transitionDuration]=600>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen16.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen15.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen14.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen17.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen18.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen19.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+  
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/screen16.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen15.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen14.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen17.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen18.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen19.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+  
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/screen16.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen15.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen14.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen17.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen18.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen19.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/screen16.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen15.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen14.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen17.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen18.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen19.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen20.png">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/screen21.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen22.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen23.png">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/screen24.png">
+        </div>
+  
+  
+      </carousel>
+    </div>
+    </div>
+  
+<footer id="footer" >
+    <span id="foot1">вулиця Минайська, 35А, Ужгород, Закарпатська область, 88000</span>
+    <div id="foot2"><img width="40px" src="./assets/images/Instagram.png" alt="">
+    <img width="40px" src="./assets/images/Facebook_white.png" alt="">
+    <img width="40px" src="./assets/images/tel.png" alt="">
+    </div>
+    <span id="foot3">(066) xxx-xx-xx<br>
+      (066) xxx-xx-xx</span>
+    </footer>
+  </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html>
+
+<head>
+  <script src="jquery.js"></script>
+  <script>
+    $(function () {
+      $("#Content").load("xz.html");
+    });
+
+  </script>
+</head>
+
+<link href="ortho/node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+
+<div id="navbar">
+
+  <span><a href=""><img id="logo" src="./assets/images/logo.svg" alt=""></a></span>
+  <div id="logo1"><img src="./assets/images/logo.svg" alt=""></div>
+  <span id="adv"> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+
+
+  <div (click)="toggleNavbar()" id="nav_butt"><img src="./assets/images/Menu Icon.png" alt=""></div>
+</div>
+
+
+<div id="mob_menu" [ngClass]="{ 'show': navbarOpen }">
+  <span> <a href="">ГОЛОВНА</a></span>
+  <span> <a href="advantages">НАШІ ПЕРЕВАГИ</a></span>
+  <span> <a href="braces">НАШІ БРЕКЕТИ</a></span>
+  <span> <a href="rules">ПРАВИЛА ДЛЯ ПАЦІЄНТІВ</a></span>
+
+</div>
+
+<div [ngClass]="{ 'show2': navbarOpen }">
+  <div id="bod" style="display: flex; flex-direction:column;">
+    <span style="text-align: center;margin-top: 60px; display: inline-block; margin-bottom: 50px; font-size: 26px; color: #262626">ГАЛЕРЕЯ</span>
+    <div class="carousel" id="c1">
+
+      <carousel [cellsToShow]=3 [margin]=25 [height]=650  [cellWidth]=120  [loop]="true"
+        [arrowsTheme]="'dark'" [transitionTimingFunction]="'ease-in-out'" [autoplayInterval]=4000 [dots]=false
+        [transitionDuration]=600>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+  
+      </carousel>
+    </div>
+  
+  
+    <div class="carousel" id="c2">
+  
+      <carousel [cellsToShow]=1 [margin]=25 [height]=450  [cellWidth]=120  [loop]="true"
+        [arrowsTheme]="'dark'" [transitionTimingFunction]="'ease-in-out'" [autoplayInterval]=4000 [dots]=false
+        [transitionDuration]=600>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+  
+  
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell" class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/1.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/2.jpg">
+        </div>
+        <div class="carousel-cell">
+          <img src="./assets/images/3.jpg">
+        </div>
+  
+      </carousel>
+    </div>
+    </div>
+  
+<footer id="footer" >
+    <span id="foot1">вулиця Минайська, 35А, Ужгород, Закарпатська область, 88000</span>
+    <div id="foot2"><img width="40px" src="./assets/images/Instagram.png" alt="">
+    <img width="40px" src="./assets/images/Facebook_white.png" alt="">
+    <img width="40px" src="./assets/images/tel.png" alt="">
+    </div>
+    <span id="foot3">(066) xxx-xx-xx<br>
+      (066) xxx-xx-xx</span>
+    </footer>
+  </div>
+</html> -->
