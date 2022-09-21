@@ -761,12 +761,16 @@ margin-top: -20px;
  
     background-color: #262626;
    
-  
+  margin-top: -8px;
     margin-left: -8px;
     padding-left: 8px;
   width: 101.2%;
   overflow: hidden;
+margin-bottom: -8px;
   
+  }
+  footer {
+    padding-bottom: 20px;
   }
   @media screen and (max-width: 500px)   {
   
@@ -789,7 +793,14 @@ margin-top: -20px;
   
   }
   }
-  
+   #navbar{
+    margin-bottom: 20px;
+    
+    }
+
+    #mob_menu{
+      margin-bottom: 20px;
+      }
   
   @media screen and (max-width: 770px)   {
   
@@ -804,3 +815,13 @@ margin-top: -20px;
     }
     
   
+
+    a:hover{
+      color: #262626;
+    }
+
+    #foot2 a:link{
+      color: #FFFFFF;
+      background-color: #77ABA5;
+        text-decoration: none;
+      }

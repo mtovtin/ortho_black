@@ -515,7 +515,7 @@
     .txt {
         text-align: center;
         width: 70%;
-        font-size: 26px;
+        font-size: 20px;
         color: #262626;
         font-family: "Futura Pt";
 
@@ -764,12 +764,16 @@ a:hover{
  
       background-color: #262626;
      
-    
+    margin-top: -8px;
       margin-left: -8px;
       padding-left: 8px;
     width: 101.2%;
     overflow: hidden;
+  margin-bottom: -8px;
     
+    }
+    footer {
+      padding-bottom: 20px;
     }
     @media screen and (max-width: 500px)   {
     
@@ -807,3 +811,8 @@ a:hover{
       }
       
     
+      #foot2 a:link{
+        color: #FFFFFF;
+        background-color: #77ABA5;
+          text-decoration: none;
+        }
