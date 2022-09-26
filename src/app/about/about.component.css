@@ -34,8 +34,9 @@
     height: 100%;
     width: 100%;
     font-size: 100%;
-    margin: 0px !important;
+  margin: 0 !important;
     line-height: 1;
+  overflow: hidden !important;
     font-size: 14px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -1130,4 +1131,6 @@ margin-bottom: 10px;
 
 
 
-  
+        #mob_menu {
+          margin-top: 20px;
+        }
