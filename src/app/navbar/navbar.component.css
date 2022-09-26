@@ -962,3 +962,10 @@ margin-bottom: 20px;
     background-color: #77ABA5;
       text-decoration: none;
     }
+
+
+    @media screen and (max-width: 770px)   {
+      body{
+            padding-right: 30px;
+      }
+      }
