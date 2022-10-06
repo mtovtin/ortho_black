@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: '', component: NavbarComponent},
   {path: 'advantages', component: AdvantagesComponent},
   {path: 'braces', component: BracesComponent},
-  {path: 'gallery', component: GalleryComponent},
+  {path: 'reviews', component: GalleryComponent},
   {path: 'rules', component: RulesComponent},
   {path: 'about', component: AboutComponent}
 ];

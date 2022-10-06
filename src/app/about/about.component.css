@@ -34,13 +34,16 @@
     height: 100%;
     width: 100%;
     font-size: 100%;
-  margin: 0 !important;
+
     line-height: 1;
   overflow: hidden !important;
     font-size: 14px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+  }
+  body {
+   padding-left: 20px !important;
   }
   input,
   button,
